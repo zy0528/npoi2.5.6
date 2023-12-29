@@ -450,6 +450,8 @@ namespace NPOI.SS.Formula.Eval
             retval[365] = new NotImplementedFunction("VARPA"); // VARPA
             retval[366] = new NotImplementedFunction("STDEVA"); // STDEVA
             retval[367] = new NotImplementedFunction("VARA"); // VARA
+            retval[368] = new Days(); // DAYS
+            retval[369] = new DatedElta(); // DATEDELTA		
             return retval;
         }
 
