@@ -12,8 +12,8 @@ namespace NPOI.SS.Formula.Functions
             double result;
             try
             {
-                DateTime startingDate = GetStartingDate(TimeHelper.GetDateTime(srcRowIndex, srcColumnIndex, arg0));
-                DateTime endDate = TimeHelper.GetDateTime(srcRowIndex, srcColumnIndex, arg1);
+                DateTime endDate = GetStartingDate(TimeHelper.GetDateTime(srcRowIndex, srcColumnIndex, arg0));
+                DateTime startingDate = TimeHelper.GetDateTime(srcRowIndex, srcColumnIndex, arg1);
                 result = Evaluate(startingDate, endDate);
             }
             catch (EvaluationException e)
@@ -28,8 +28,8 @@ namespace NPOI.SS.Formula.Functions
             double result;
             try
             {
-                DateTime startingDate = GetStartingDate(TimeHelper.GetDateTime(srcRowIndex, srcColumnIndex, arg0));
-                DateTime endDate = TimeHelper.GetDateTime(srcRowIndex, srcColumnIndex, arg1);
+                DateTime endDate = GetStartingDate(TimeHelper.GetDateTime(srcRowIndex, srcColumnIndex, arg0));
+                DateTime startingDate = TimeHelper.GetDateTime(srcRowIndex, srcColumnIndex, arg1);
                 ValueEval ve = OperandResolver.GetSingleValue(arg2, srcRowIndex, srcColumnIndex);
                 bool? method = OperandResolver.CoerceValueToBoolean(ve, false);
                 result = Evaluate(startingDate, endDate);
