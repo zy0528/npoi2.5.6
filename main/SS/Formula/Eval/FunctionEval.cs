@@ -96,7 +96,7 @@ namespace NPOI.SS.Formula.Eval
          */
         private static Function[] ProduceFunctions()
         {
-            Function[] retval = new Function[368];
+            Function[] retval = new Function[370];
             retval[0] = new Count(); // COUNT
             retval[FunctionID.IF] = new IfFunc(); //nominally 1
             retval[2] = LogicalFunction.ISNA; // IsNA
