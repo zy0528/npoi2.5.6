@@ -27,7 +27,7 @@ namespace TestCases.SS.Formula.Functions
      * @author Josh Micich
      */
     [TestFixture]
-    public class TestDays360
+    public class TestDays360_Bak
     {
 
         /**
@@ -161,7 +161,7 @@ namespace TestCases.SS.Formula.Functions
         }
         private static ValueEval invokeDays360(params ValueEval[] args)
         {
-            return new Days360().Evaluate(args, -1, -1);
+            return new Days360_Bak().Evaluate(args, -1, -1);
         }
         private static NumberEval Convert(DateTime d)
         {
